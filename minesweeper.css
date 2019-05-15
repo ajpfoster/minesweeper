@@ -1,6 +1,6 @@
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Prata', sans-serif
 }
 
 body {
@@ -8,6 +8,7 @@ body {
   align-items: center;
   justify-content: flex-center;
   flex-direction: column;
+  background-color: rgb(164, 219, 255);
 }
 
 #message, #notes {
@@ -17,7 +18,7 @@ body {
 }
 
 #message {
-  font-size: 1.5rem;
+  font-size: 50px;
 }
 
 .board {
@@ -26,13 +27,13 @@ body {
 }
 
 .board div {
-  color: green;
+  color: red;
   font-size: 2rem;
   width: 75px;
   height: 75px;
-  border: 1px #ccc dotted;
+  border: 1px #ccc solid;
   border-radius: 10%;
-  background-color: white;
+  background-color: black;
   margin: 3px;
   display: flex;
   align-items: center;
@@ -56,5 +57,19 @@ div.hidden:hover {
 }
 
 div.marked, div.marked:hover {
-  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+  background: no-repeat center/60% url("images/mark.svg") #12a819fc
+}
+
+button {
+  margin-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Prata', sans-serif;
+  font-size: 20px;
+  color: #000000fc;
+  border-radius: 10%;
+}
+
+button:hover {
+  background: #0fce19ca;
 }
